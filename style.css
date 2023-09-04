@@ -1,0 +1,288 @@
+body {
+    background-size:cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    background-attachment:fixed;
+    background-position: center center;
+    /*grid-column-start: 1 ;
+    grid-column-end: 6;
+    grid-row-start: 1 ;
+    grid-row-end: 6;*/
+
+
+}
+
+.grid{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}
+
+.arrowRight{
+    position:absolute;
+    top: 50svh;
+    left: 2svh;
+    background-color: rgba(250, 235, 215, 0.151);
+    justify-self: center;
+    align-self: top;
+    font-size: 500%;
+    max-height: 15svh;
+}
+
+.arrowRight:hover{
+    background-color: rgba(220, 115, 224, 0.479);
+    border-radius: 10%;
+    max-height: 15svh;
+}
+
+.arrowLeft{
+    position: absolute;
+    top: 50svh;
+    right: 2svh;   
+    background-color: rgba(250, 235, 215, 0.151);
+    justify-self: center;
+    align-self: top;
+    font-size: 500%;
+    max-height: 15svh;
+}
+.arrowLeft:hover{
+    background-color: rgba(220, 115, 224, 0.479);
+    border-radius: 10%;
+    max-height: 15svh;
+}
+
+.status{
+    grid-area: 1/1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+
+
+.btns{
+    max-width: 20vh;
+    max-height: 20vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 2svh;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: outset;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
+}
+.btnsClick{
+    max-width: 20vh;
+    max-height: 15vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 2svh;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: inset;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.food{
+    grid-area: 5/3;
+    
+}
+.sleep{
+    grid-area: 5/3;
+}
+.health{
+    grid-area: 5/3;
+}
+
+#start {
+    width: 15vh;
+    height: 15vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 5px;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: outset;
+    
+    justify-self: center;
+    align-self: center;
+}
+#food1 {
+    grid-area: 5/3;
+    width: 15vh;
+    height: 10vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 2vh;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: outset;
+    
+    justify-self: center;
+    align-self: center;
+}
+#sleep1 {
+    width: 15vh;
+    height: 10vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 2vh;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: outset;
+    display: '';
+    justify-self: center;
+    align-self: center;
+}
+#health1 {
+    width: 15vh;
+    height: 10vh;
+    font-size: 4vh;
+    font-style: oblique;
+    background-color: palevioletred;
+    border: 2vh;
+    border-radius: 60%;
+    border-color: rgb(44, 218, 131);
+    border-style: outset;
+    
+    justify-self: center;
+    align-self: center;
+}
+
+.dataDyr{
+    width: auto;
+    height: 30svh;
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: center;
+    align-self: flex-end;
+}
+.dataDyrBedroom{
+    width: auto;
+    height: 30svh;
+
+    grid-area: 4/2;
+justify-self: center;
+    margin-bottom: 14svh;
+}
+
+.dataDyrKitchen{
+    width: auto;
+    height: 30svh;
+
+    grid-area: 4/2;
+    
+
+    margin-bottom: 13svh;
+    margin-left: 20svh;
+    
+}
+.dataDyrBathroom{
+    width: auto;
+    height: 30svh;
+
+    grid-area: 6/3;
+    
+
+    margin-top: 15svh;
+    
+    
+}
+
+.controller {
+    grid-area: 5/3;
+    justify-self: center;
+    align-self: center;
+    /*position: absolute;
+    left: 70vh;
+    top: 90vh;*/
+}
+.container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 50vh;
+    
+    
+    
+    
+}
+#myProgressHunger {
+    width: 100%;
+    height: 6svh;
+    background-color: #d4d4d4;
+    border-radius: 10vh;
+    border-radius: 10vh;
+    border-style: groove;
+    border-color: black ;
+    
+}
+#myProgressHealth {
+    width: 100%;
+    height: 6svh;
+    background-color: #d4d4d4;
+    border-radius: 10vh;
+    border-radius: 10vh;
+    border-style: groove;
+    border-color: black ;
+}
+#myProgressSleep {
+    width: 100%;
+    height: 6svh;
+    background-color: #d4d4d4;
+    border-radius: 10vh;
+    border-radius: 10vh;
+    border-style: groove;
+    border-color: black ;
+}
+#hungerBar {
+    width: 100%;
+    height: 6svh;
+    background-color: #04ff19;
+    text-align: center;
+    line-height: 3svh;
+    border-radius: 10vh;
+    
+}
+#healthBar {
+    width: 100%;
+    height: 6svh;
+    background-color: #04ff19;
+    text-align: center;
+    line-height: 3svh;
+    border-radius: 10vh;
+   
+}
+#sleepBar {
+    width: 100%;
+    height: 6svh;
+    background-color: #04ff19;
+    text-align: center;
+    line-height: 3svh;
+    border-radius: 10vh;
+   
+}
